@@ -1,3 +1,8 @@
+// The question, in normal words
+// You are given a list of numbers and one more number called the target.
+// Somewhere in that list there are exactly two numbers that add up to the target. Your job is to find them and return their positions in the list, not the numbers themselves.
+// You may assume there is exactly one answer, and you cannot use the same position twice.
+
 // My Solution
 function twoSum(arr, target) {
     for (let i = 0; i < arr.length; i++) {
