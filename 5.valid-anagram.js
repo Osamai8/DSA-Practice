@@ -25,3 +25,10 @@ function validAnagram(s, t) {
 
 const result = validAnagram("aab", "bcc");
 console.log(result);
+
+// Time: O(n)
+// Two loops, run one after the other, not nested.
+//  The first walks n characters, the second walks n characters,
+//  so the total is 2n, and constants drop out of Big O. 
+// Every operation inside both loops, the get, the arithmetic, 
+// the set, costs a fixed amount that does not depend on n.
