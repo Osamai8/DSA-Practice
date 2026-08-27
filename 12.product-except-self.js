@@ -54,5 +54,18 @@ function productExceptSelf(nums) {
 // Two passes
 //    ↓
 // O(n) time
+
+// Two loops, one after the other, each visiting every element once.
+// That is 2n passes over the data, and Big O drops constant factors, so it is O(n). 
+// Two loops in sequence are still O(n). Only a loop inside a loop would make it O(n squared).
+
+
+// "Brute force is O(n squared). Division would be O(n) but it is banned, 
+// and it breaks on zeros anyway, so I will build each answer from partial products. 
+// First pass left to right writes the prefix product into the output array. 
+// Second pass right to left multiplies in a suffix product that I carry in one variable. 
+// That is O(n) time and O(1) extra space, not counting the output." 
+// 
+// Delivering that unprompted is most of what is being scored.
 const result = productExceptSelf([1, 2, 3, 4, 5]);
 console.log(result);
